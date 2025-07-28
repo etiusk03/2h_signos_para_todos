@@ -112,7 +112,9 @@ $resultado = $stmt->get_result();
             <div class="modulo-card">
                 <h3>Área de práctica mediante juegos:</h3>
                 <p>En esta sección podrás practicar deletreando palabras letra por letra con la videocámara.</p>
-                <a href="../../MODULOS/NivelBasicoJuegos/juegoDeletreoBasico.php" class="btn btn-secondary">Juego de Deletreo</a>
+                <a href="../../MODULOS/NivelBasicoJuegos/juegoDeletreoBasico.php" class="btn btn-secondary">Deletreo</a>
+                <a href="#" class="btn btn-secondary">Empareja cartas (Proximamente...)</a>
+                <a href="#" class="btn btn-secondary">Simon dice (Proximamente...)</a>
             </div>
         <?php endwhile; ?>
     <?php else: ?>
