@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.modulo-card {
+  background-color: #fff;
+  padding: 25px;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #222;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#juego {
+  margin-top: 20px;
+}
+
+video#video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#mensaje {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-volver {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #3e8e41;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modulo-card {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

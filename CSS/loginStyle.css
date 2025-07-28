@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('imagenes/backgroundLogin.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #6687c9; /* Color de respaldo */
+}
+
+/* Estilos para box_total */
+.box_total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;  /* Cambiamos esto */
+    height: auto;      /* Añadimos esto */
+    width: 100%;
+    padding: 20px 40px; /* Reducimos padding vertical */
+    margin: 40px 0;    /* Añadimos margen arriba/abajo */
+}
+
+.box_total .container {
+    width: 100%;
+    max-width: 440px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+/* Corrección para la ruta de la imagen */
+.box_total .login-content img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+    height: auto;
+}

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Mod principales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#separadorIMG img {
+    width: 100%;
+    height: 7px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+body {
+    font: 'PT Serif';
+    width: auto;
+    height: auto;
+    background-color: #021846;
+}
+
+header {
+    width: 100%;
+    max-height: 90px;
+    padding: 4px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+/*LOGO*/
+#uniqueLogo {
+    width: 100px;
+    height: 60px;
+    background-color: none;
+}
+
+/*Menu superior*/
+.menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.con_margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navegacion {
+    width: auto;
+    margin: 0 auto;
+    background: transparent;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion ul {
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    align-items: center;
+    padding: 10px 60px;
+    color: #4a6baf;
+    font-family: 'Open sans';
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    color:  #4a6baf;
+    transition: all .3s;
+}
+
+.login_container {
+    padding-right: 30px;
+    margin-left: auto;
+    min-width: 150px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #6687c9;
+    color: white;
+    font-family: 'Open sans';
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #3a5691; 
+    color: white;
+}
+
+/*submenu*/
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    z-index: 999;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #4a6baf;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*------------------------Footer------------------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    height: auto; 
+    background-color: #021846;
+    padding: 20px;
+    color: white;
+}
+
+#infoPag {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+    text-align: center; 
+    width: 30%; 
+    padding-right: 80px;
+}
+
+#infoPag img {
+    width: 80px; 
+    height: auto; 
+}
+
+
+#infoPag div:nth-of-type(1) img {
+    width: 120px;
+    height: 80px;
+}
+
+#infoPag div:nth-of-type(2) {
+    display: flex;
+    gap: 10px;
+}
+
+#infoPag div:nth-of-type(2) img {
+    width: 50px;
+    height: 50px;
+}
+
+#infoPag div:nth-of-type(3) img {
+    width: 300px; 
+    height: 6px; 
+}
+
+#infoPag h3, #infoPag p {
+    margin: 0; 
+    font-size: 25px; 
+    color: white; 
+}
+
+#enlaces {
+    width: 20%;
+    text-align: left; 
+}
+
+#enlaces h2 {
+    font-size: 30px; 
+    margin-bottom: 10px; 
+}
+
+#enlaces ul {
+    padding: 0; 
+    list-style: initial; 
+}
+
+#enlaces li {
+    margin: 30px 0;
+}
+
+#enlaces li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 25px; 
+}
+
+#enlaces a:hover {
+    color: #4a6baf; 
+}
+
+#direccionContacto {
+    width: 30%; 
+    text-align: left; 
+}
+
+#direccionContacto h2 {
+    font-size: 28px; 
+    margin-bottom: 10px;
+}
+
+#direccionContacto p {
+    margin: 5px 0; 
+    font-size: 18px;
+    padding: 15px;
+}
+
+.center-photo {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen ocupa todo el ancho disponible, pero con límite */
+.center-photo img {
+    width: 100%;
+    max-width: 1000px; /* evita que se vea demasiado grande en pantallas enormes */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* centrado horizontal y separación inferior */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos de los textos */
+.center-photo p {
+    margin: 10px 0;
+    color: #2c3e50;
+    font-size: 50px;
+    font-weight: 500;
+}
